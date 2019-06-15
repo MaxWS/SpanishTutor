@@ -31,9 +31,11 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
+  color: #FDFDFD;
 }
-h1 {
+p.hola {
   font-size: 1.3rem;
+  color: #121212;
 }
 h2 {
   font-size: 1.3rem;
@@ -59,14 +61,15 @@ p.text {
   padding-right: 1em;
   padding-top: 1em;
   padding-bottom: 0.5em;
+  color: #121212;
 }
 p.text.white {
-  color: white;
+  color: #FDFDFD;
 }
 .enie {
   display: flex;
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: #FDFDFD;
   /*text-align: center;*/
   padding: 2em;
   font-size: 3rem;
@@ -74,33 +77,34 @@ p.text.white {
   align-items: center;
 }
 .fact2 {
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: #FDFDFD;
   padding: 4em;
+  text-align: center;
 }
 .square-pattern {
   padding-bottom: 6em;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid #121212;
   /*background-color: black;
   border-top-color: black;*/
-  border-bottom-color: white;
+  border-bottom-color: #FDFDFD;
 
  /* -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);  */
 }
 .aside {
-  background-color: black;
+  background-color: #121212;
 }
 .writers {
-  color: white;
+  color: #FDFDFD;
   text-align: left;
   padding-top: 2.5em;
   padding-bottom: 1.5em;
   padding-left: 1em;
 }
 .writer-sub {
-  color: white;
+  color: #FDFDFD;
   text-align: center;
   padding: 0 1em 0.5em 1em;
 }
@@ -116,8 +120,8 @@ p.text.white {
   line-height: 1;
 }
 .aside-square {
-  background-color: white;
-  border: 2px solid black;
+  background-color: #FDFDFD;
+  border: 2px solid #121212;
 }
 .notes-to-rulfo {
   font-variant: sub;
@@ -127,12 +131,17 @@ p.text.white {
   font-variant: sub;
   line-height: 1;
 }
+.farewell {
+  text-align: center;
+  font-variant: small-caps; 
+}
 .footer-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1em minmax(3em, auto) 1em;
   grid-gap: 0.5em;
   align-items: center;
+  color: #121212;
 }
 .maxi-photo {
   grid-column: 2/2;
@@ -144,6 +153,9 @@ p.text.white {
   grid-column: 3/6;
   grid-row: 2/3;
   font-size: 0.8rem;
+}
+.complete-name {
+  font-weight: bold;
 }
 @supports (filter: grayscale(1)) and (background-blend-mode: difference) {
   .maxi-photo {
@@ -157,7 +169,6 @@ p.text.white {
   grid-column: 6/7;
   display: flex;
   flex-direction: column;
-
 }
 /*.photo {
   height: 100%;
@@ -194,9 +205,7 @@ FOOTER
 
 /* Medium devices (small tablets, portrait tablets and large phones) */
 @media (min-width: 600px) {
-    p.text {
-      padding: 0;
-    }
+    
     .aside {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -260,6 +269,13 @@ FOOTER
     grid-column: 3/7;
     grid-row: 7/8;
     }
+    .farewell {
+      grid-column: 1/3;
+      grid-row: 7/8; 
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+    }
     .footer-container {
       grid-template-rows: 0.5em minmax(3em, auto) 0.5em;
       grid-gap: 0.7em;
@@ -273,17 +289,24 @@ FOOTER
       grid-row: 2/3;
       font-size: 1.1rem;
     }
+    .icons {
+      font-size: 1.2rem;
+    }
 
 }
 /* End Devices in between cell phone and tablet*/
 
 /* Large devices (large tablets/laptops/desktops) */
 @media (min-width: 1200px) {
-  h1 {
+  p.hola {
     text-align: right;
     grid-column: 2/6;
     font-size: 6rem;
   }
+  p.text {
+      padding: 0 0 1em 0;
+
+    }
   /*p.text {
     padding: 0;
   }*/
@@ -325,21 +348,34 @@ FOOTER
     grid-row: 4/5;
   }
   .fact1 {
-    grid-column: 4/5;
+    grid-column: 5/6;
     grid-row: 4/5;
+    
+  }
+  .fact1 p.text.andes {
+    padding-top: 0.5em;
+    color: #FDFDFD;
+    font-weight: bold;
+    letter-spacing: 0.06em;
   }
   .fact2 {
     grid-column: 5/6;
     grid-row: 5/6;
     padding: 1em
   }
-  .square {
+  .pills {
+    grid-column: 2/4;
+    grid-row: 5/6;
+  }
+  /*.square {
     grid-column: 4/5;
     grid-row: 5/6;
-
-  }
-  .square-pattern {
+  }*/
+  /*.square-pattern {
     padding-bottom: 9em;
+  }*/
+  .square-pattern {
+    display: none;
   }
   .aside {
     display: grid;
@@ -412,6 +448,14 @@ FOOTER
       grid-column: 4/6;
       grid-row: 5/6;
     }
+    .farewell {
+      grid-column: 2/4;
+      grid-row: 5/6;
+      align-items: flex-end;
+      padding: 0 0.3em 0 0.3em;
+      font-size: 1.2rem;
+      letter-spacing: 0.3em;
+    }
     .aside-square {
       display: none;
     }
@@ -425,6 +469,8 @@ FOOTER
     .icons {
       grid-row: 2/3;
       grid-column: 5/6;
+      font-size: 1.5rem;
+    
     }
 
 
