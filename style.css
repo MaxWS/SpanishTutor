@@ -21,6 +21,13 @@ Author: Maximiliano Diaz Garcia
 /* BASE STYLES
 /*******************************************/
 
+:root {
+  --paragraph:'Inconsolata', monospace;
+  /*193549*/
+  /*#2A364D(original)*/
+  /* --click: #B9E2A6;
+  --lightgrey: #6C788E; */
+}
 body {
   /*color: mintcream;*/
   font-size: 18px;
@@ -62,9 +69,22 @@ p.text {
   padding-top: 1em;
   padding-bottom: 0.5em;
   color: #121212;
+  font-family: var(--paragraph);
 }
 p.text.white {
   color: #FDFDFD;
+  font-family: var(--paragraph);
+
+}
+.intro-first {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  color: #121212;
+  font-family: 'Inconsolata', monospace;
+
+  font-size: 1.5rem;
 }
 .enie {
   display: flex;
@@ -83,25 +103,35 @@ p.text.white {
   text-align: center;
 }
 .square-pattern {
-  padding-bottom: 6em;
-  background-color: white;
+  padding: 3em 0.5em 1em 0.5em;
+  background-color: #FDFDFD;
   border: 2px solid #121212;
-  /*background-color: black;
-  border-top-color: black;*/
   border-bottom-color: #FDFDFD;
-
- /* -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);  */
+}
+.uno {
+  color: #121212;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.dos {
+  color: #121212;
+  text-align: left;
+  font-weight: bold;
 }
 .aside {
   background-color: #121212;
   padding-bottom: 0.5em;
 }
+.aside-title {
+  text-align: left;
+  font-size: 2em;
+}
 .writers {
   color: #FDFDFD;
   text-align: left;
-  padding-top: 2.5em;
-  padding-bottom: 1.5em;
+  /*padding-top: 2.5em;*/
+  padding-bottom: 5.5em;
   padding-left: 1em;
 }
 .writer-sub {
@@ -134,8 +164,13 @@ p.text.white {
 }
 .farewell {
   text-align: center;
-  font-variant: small-caps; 
+  font-variant: small-caps;
   padding-top: 1em;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.3rem;
+  /*font-weight: bold;*/
+  letter-spacing: 0.1em;
+  word-spacing: 0.3em;
 }
 .footer-container {
   display: grid;
@@ -164,7 +199,7 @@ p.text.white {
     background-blend-mode: difference;
     background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
     filter: brightness(1.5) grayscale(1);
-  }    
+  }
 }
 .location {
   color: #121212;
@@ -210,7 +245,7 @@ FOOTER
 
 /* Medium devices (small tablets, portrait tablets and large phones) */
 @media (min-width: 600px) {
-    
+
     .aside {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -219,6 +254,9 @@ FOOTER
     padding-bottom: 3em;
     /*padding-left: 1em;
     padding-right: 1em;*/
+    }
+    .intro-first {
+      font-size: 2.5rem;
     }
     .writers {
     grid-column: 1/6;
@@ -285,10 +323,11 @@ FOOTER
     }
     .farewell {
       grid-column: 1/3;
-      grid-row: 7/8; 
+      grid-row: 7/8;
       display: flex;
-      align-items: center;
-      font-size: 1.5rem;
+      align-items: end;
+      font-size: 2rem;
+      margin: 0 1em 0 1em;
     }
     .footer-container {
       grid-template-rows: 0.5em minmax(3em, auto) 0.5em;
@@ -319,8 +358,11 @@ FOOTER
   }
   p.text {
       padding: 0 0 1em 0;
-
     }
+  .intro-first {
+    padding: 0 0 1em 0;
+  }
+
   /*p.text {
     padding: 0;
   }*/
@@ -364,7 +406,7 @@ FOOTER
   .fact1 {
     grid-column: 5/6;
     grid-row: 4/5;
-    
+
   }
   .fact1 p.text.andes {
     padding-top: 0.5em;
@@ -401,7 +443,6 @@ FOOTER
     padding-right: 1em;*/
     }
     .aside-title {
-      text-align: left;
       font-size: 3rem;
     }
     .writers {
@@ -455,7 +496,7 @@ FOOTER
     }
     .notes-to-onetti {
       display: block;
-      grid-row: 5/6; 
+      grid-row: 5/6;
       grid-column: 3/4;
       padding: 0;
     }
@@ -489,7 +530,7 @@ FOOTER
       grid-row: 2/3;
       grid-column: 5/6;
       font-size: 1.5rem;
-    
+
     }
 
 
