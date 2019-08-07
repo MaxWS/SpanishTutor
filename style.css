@@ -43,7 +43,7 @@ body {
 h1 {
   text-transform: uppercase;
   font-size: 2.5rem;
-  padding: 1em 1em 0 1em;
+  padding: 1em 1em 0 .4em;
   font-weight: bold;
 }
 header {
@@ -98,6 +98,7 @@ MAIN
   padding: 1em .5em 2em .5em;
   text-transform: uppercase;
   letter-spacing: .1em;
+  margin-left: .5em;
 }
 .intro-first {
   padding: 1em 1em .5em 1em;
@@ -111,6 +112,7 @@ MAIN
   
   .intro-first::first-letter {
     font-weight: bold;
+    text-decoration: none;
     margin-right: .5em;
 
     -webkit-initial-letter: 4;
@@ -118,7 +120,7 @@ MAIN
   }
 }
 .bienvenido {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .enie {
   display: flex;
