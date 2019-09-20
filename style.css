@@ -23,6 +23,7 @@ Author: Maximiliano Diaz Garcia
 
 :root {
   --paragraph:'Inconsolata', monospace;
+  --black: #121212;
   /*193549*/
   /*#2A364D(original)*/
   /* --click: #B9E2A6;
@@ -47,7 +48,7 @@ h1 {
   font-weight: bold;
 }
 header {
-  background-color: #121212;
+  background-color: var(--black);
   font-family: 'bodoni', sans-serif;
   /*min-height: 60vh;*/
 }
@@ -77,11 +78,8 @@ img.zoom {
   color: #121212;
 }*/
 p.text {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1em;
-  padding-bottom: .5em;
-  color: #121212;
+  padding: 1em 1em .5em 1em;
+  color: var(--black);
   font-family: var(--paragraph);
 }
 p.text.white {
@@ -94,7 +92,7 @@ MAIN
 /*******************************************/
 .tutor {
   background-color: #FDFDFD;
-  color: #121212;
+  color: var(--black);
   margin: 1em 0 1em 1em;
   padding: 1em .5em 2em .5em;
   text-transform: uppercase;
@@ -103,17 +101,21 @@ MAIN
   /*font-weight: bold;*/
 }
 .intro-first {
-  padding: 1em 1em .5em 1em;
+  padding: 1em 1em .5em .7em;
   /*text-decoration: underline;*/
-  color: #121212;
+  color: var(--black);
   font-family: 'Inconsolata', monospace;
   font-size: 1.5rem;
 }
+.introduction {
+  padding-top: 3em;
+}
 .introduction-second {
   text-decoration: underline;
-  padding: .5em .5em 1em .5em;
+  padding: .5em .5em 1em 0;
   color: #121212;
   font-family: var(--paragraph);
+  line-height: 1.5em;
 }
 @supports (initial-letter: 4) or
   (-webkit-initial-letter: 4) {
@@ -130,7 +132,7 @@ MAIN
 .bienvenido {
   font-size: 2.5rem;
   /*color: #121212;*/
-  background-color: #121212;
+  background-color: var(--black);
   font-variant: all-petite-caps;
   letter-spacing: 0.1em;
   padding: 0 0 0 .5em;
@@ -139,19 +141,19 @@ MAIN
 }
 .enie {
   display: flex;
-  background-color: #121212;
+  background-color: var(--black);
   color: #FDFDFD;
   padding: 2em;
   font-size: 3rem;
   justify-content: center;
   align-items: center;
 }
-/*.fact2 {
-  background-color: #121212;
+.fact2 {
+  background-color: var(--black);
   color: #FDFDFD;
   padding: 4em;
   text-align: center;
-}*/
+}
 /*.square-pattern {
   padding: 3em .5em 1em .5em;
   background-color: #FDFDFD;
@@ -159,13 +161,15 @@ MAIN
   border-bottom-color: #FDFDFD;
 }*/
 .uno {
-  color: #121212;
+  color: var(--black);
   text-align: left;
   font-size: 2rem;
   font-weight: bold;
+  font-style: italic;
+  font-family: 'bodoni', sans-serif;
 }
 .dos {
-  color: #121212;
+  color: var(--black);
   text-align: left;
   font-weight: bold;
 }
@@ -174,7 +178,7 @@ MAIN
 ASIDE
 /*******************************************/
 .aside {
-  background-color: #121212;
+  background-color: var(--black);
   padding-bottom: .5em;
 }
 .aside-title {
@@ -252,7 +256,7 @@ FOOTER
   }
 }
 .location {
-  color: #121212;
+  color: var(--black);
 }
 .icons {
   grid-row: 2/3;
@@ -269,9 +273,72 @@ FOOTER
     padding: 1em 0 0 .4em;
     font-weight: lighter;
     }
+    header {
+      min-height: 50vh;
+    }
     header > p {
       font-size: 1.5rem;
-    }  
+      line-height: 1.5;
+      padding-bottom: 3em;
+      padding-top: 0;
+    }
+    .tutor {
+      margin: 4em 0 1em 1em;
+    }
+    .main {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(7, minmax(100px, auto));
+      grid-gap: .5em;
+      padding-bottom: 3em;
+    } 
+    .bandoneon {
+      grid-column: 1/7;
+      grid-row: 1/2;
+    } 
+    .introduction {
+      grid-column: 1/7;
+      grid-row: 2/3;
+    }
+    .introduction-second {
+      grid-column: 1/7;
+      grid-row: 3/4;
+    }
+    .enie {
+      grid-column: 3/5;
+      grid-row: 4/5;
+      padding: 0;
+    }
+    .enie > p {
+      font-size: 8rem;
+    }
+    .arab {
+      grid-column: 1/3;
+      grid-row: 4/5;
+    }
+    .vines {
+      grid-column: 3/5;
+      grid-row: 5/6;
+    }
+    .flamenco {
+      grid-column: 1/5;
+      grid-row: 6/7;
+    }
+    .fact1 {
+      grid-column: 5/7;
+      grid-row: 4/5;
+    }
+    .fact1 p.text.andes {
+      padding-top: 0.5em;
+      /*color: #FDFDFD;*/
+      font-weight: bold;
+      letter-spacing: .06em;
+    }
+    .fact2 {
+      grid-column: 5/7;
+      grid-row: 7;
+      padding: 1em; 
+    }
     .aside {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -398,7 +465,7 @@ FOOTER
     grid-row: 2/3;
   }
   p {
-  	font-size: 1.5rem;
+  	font-size: 1.1rem;
   }
   /*p.hola {
     text-align: right;
@@ -478,15 +545,18 @@ FOOTER
     font-weight: bold;
     letter-spacing: .06em;
   }
-  /*.fact2 {
+  .fact2 {
     grid-column: 5/6;
     grid-row: 5/6;
-    padding: 1em
-  }*/
-  .pills {
+    padding: 1em;
+    color: 
+    /*grid-column: 5/6;
+    grid-row: 4/5;*/
+  }
+  /*.pills {
     grid-column: 5/6;
     grid-row: 1/2;
-  }
+  }*/
   /*.square-pattern {
     display: none;
   }*/
