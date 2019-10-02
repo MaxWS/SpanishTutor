@@ -57,6 +57,10 @@ header > p {
   font-family: var(--paragraph);
   padding: 1em 1em .5em 1em;
 }  
+footer {
+  background-color: #edfa;
+  /*background-color: #FCFDFF;*/
+}
 img {
   height: 100%;
   width: 100%;
@@ -145,6 +149,11 @@ MAIN
   justify-content: center;
   align-items: center;
 }
+.arab-title {
+  color: var(--lightgrey);
+  padding: 1em 1em 0 .7em;
+  font-size: 1.6rem;
+}
 .fact2 {
   background-color: var(--black);
   color: #FDFDFD;
@@ -183,9 +192,9 @@ ASIDE
   padding-bottom: .5em;
 }
 .aside-title {
-  text-align: left;
+  text-align: right;
   font-size: 2em;
-  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .writers {
   color: #FDFDFD;
@@ -321,6 +330,9 @@ FOOTER
       grid-column: 1/5;
       grid-row: 4/5;
     }
+    .arab-title {
+      padding: 0 .2em 0 1em;
+    }
     .vines {
       grid-column: 1/7;
       grid-row: 5/7;
@@ -361,10 +373,11 @@ FOOTER
       font-size: 1.7rem;
     }
     .writers {
-      grid-column: 3/7;
+      grid-column: 4/7;
       grid-row: 1/2;
-      padding-left: 1em;
-      padding-top: 5em;
+      /*padding-left: 1em;
+      padding-top: 5em;*/
+      padding: .5em 1em 5em 0;
     }
     .writer-sub {
       padding: 0 1.5em .3em 0;
@@ -499,8 +512,7 @@ FOOTER
     padding-top: 2em;
   }
   .bienvenido {
-    font-size: 6rem;
-    letter-spacing: 0.2em;
+    font-size: 7rem;
     padding: 0 0 0 .2em;
   }
   .bandoneon {
@@ -508,8 +520,8 @@ FOOTER
     grid-row: 2/3;
   }
   .introduction {
-    grid-column: 2/4;
-    grid-row: 1/3;
+    grid-column: 2/6;
+    grid-row: 1/2;
   }
   .introduction-second {
     grid-column: 2/4;
@@ -536,8 +548,8 @@ FOOTER
     grid-row: 5/6;
   }
   .fact1 {
-    grid-column: 5/6;
-    grid-row: 4/5;
+    grid-column: 2/5;
+    grid-row: 5/6;
   }
   .fact1 p.text.andes {
     padding-top: 0.5em;
@@ -567,14 +579,16 @@ FOOTER
     grid-gap: 1em;
   }
   .aside-title {
-    font-size: 3rem;
-    text-align: left;
+    font-size: 5rem;
+    text-align: right;
+    padding: 0;
   }
   .writers {
-    grid-column: 2/6;
+    grid-column: 5/6;
     grid-row: 1/2;
     padding-left: 0;
-    padding-top: 5em;
+    padding-top: 2em;
+    padding-right: 0;
   }
   .pizarnick {
     grid-column: 2/4;
