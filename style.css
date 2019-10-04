@@ -88,7 +88,7 @@ p.text.white {
 }
 
 /******************************************
-MAIN
+HEADER
 /*******************************************/
 .tutor {
   background-color: #FDFDFD;
@@ -100,6 +100,13 @@ MAIN
   margin-left: .5em;
   /*font-weight: bold;*/
 }
+/*.header-farewell {
+  font-weight: bold;
+}*/
+
+/******************************************
+MAIN
+/*******************************************/
 .intro-first {
   padding: 1em 1em .5em .7em;
   /*text-decoration: underline;*/
@@ -137,7 +144,6 @@ MAIN
   letter-spacing: 0.1em;
   padding: 0 0 0 .5em;
   margin: 0;
-
 }
 .enie {
   display: flex;
@@ -152,6 +158,9 @@ MAIN
   color: var(--lightgrey);
   padding: 1em 1em 0 .7em;
   font-size: 1.6rem;
+}
+.fact1 p.text.andes {   
+  font-weight: bold;
 }
 .fact2 {
   background-color: var(--black);
@@ -284,7 +293,6 @@ FOOTER
     text-transform: uppercase;
     font-size: 3rem;
     padding: 1em 1em 0 1em;
-    
     }
     header {
       min-height: 50vh;
@@ -293,6 +301,9 @@ FOOTER
       font-size: 1.5rem;
       line-height: 1.7;
       padding: 0 2em 3em 2em;
+    }
+    p.text {
+      padding: 1em 0 .5em 1em;
     }
     .tutor {
       margin: 4em 0 1em 2em;
@@ -312,6 +323,10 @@ FOOTER
       grid-column: 1/7;
       grid-row: 2/3;
     }
+    .bienvenido {
+      font-size: 3.5rem;
+
+    }
     .introduction-second {
       grid-column: 1/7;
       grid-row: 3/4;
@@ -330,7 +345,7 @@ FOOTER
       grid-row: 4/5;
     }
     .arab-title {
-      padding: 0 .2em 0 1em;
+      padding: 0 .2em 0 .8em;
     }
     .vines {
       grid-column: 1/7;
@@ -347,8 +362,7 @@ FOOTER
     .fact1 p.text.andes {
       padding-top: 0.5em;
       /*color: #FDFDFD;*/
-      font-weight: bold;
-      letter-spacing: .06em;
+      letter-spacing: .04em;
     }
     .fact2 {
       grid-column: 5/7;
@@ -473,7 +487,12 @@ FOOTER
     grid-row: 3/5;
     font-size: 2.5rem;
     padding-left: 0;
-  }  
+  } 
+  .tutor {
+    padding-left: 2em;
+    letter-spacing: .3em;
+    margin-left: -2em;
+  } 
   h1 {
     font-size: 4rem;  
     grid-column: 2/6;
@@ -487,11 +506,6 @@ FOOTER
   }
   p {
   	font-size: 1.1rem;
-  }
-  .tutor {
-    padding-left: 2em;
-    letter-spacing: .3em;
-    margin-left: -2em;
   }
   p.text {
     padding: 0 0 1em 0;
@@ -515,7 +529,7 @@ FOOTER
     padding: 0 0 0 .2em;
   }
   .bandoneon {
-    grid-column: 2/6;
+    grid-column: 1/6;
     grid-row: 2/3;
   }
   .introduction {
@@ -537,6 +551,9 @@ FOOTER
   .arab {
     grid-column: 5/6;
     grid-row: 3/4;
+  }
+  .arab-title {
+    padding: 0;
   }
   .vines {
     grid-column: 2/5;
@@ -678,7 +695,7 @@ FOOTER
     font-size: 5rem;
   }   
   .bienvenido {
-    font-size: 5rem;
+    font-size: 10rem;
   }
 }
 
