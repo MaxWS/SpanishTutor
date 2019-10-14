@@ -143,8 +143,7 @@ MAIN
 }
 .bienvenido {
   font-size: 2.4rem;
-  /*color: #121212;*/
-  background-color: var(--black);
+  color: var(--black);
   font-variant: all-petite-caps;
   letter-spacing: 0.1em;
   padding: .5em .5em 0 .5em;
@@ -406,7 +405,7 @@ FOOTER
       grid-row: 1/2;
       /*padding-left: 1em;
       padding-top: 5em;*/
-      padding: .5em 1em 5em 0;
+      padding: 1em 1em 5em 0;
     }
     .writer-sub {
       padding: 0 1.5em .3em 0;
