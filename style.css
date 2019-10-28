@@ -27,7 +27,7 @@ Author: Maximiliano Diaz Garcia
   /*193549*/
   /*#2A364D(original)*/
    --click: #B9E2A6;
-  --lightgrey: #6C788E; 
+  --lightgrey: #6C788E;
 }
 body {
   /*color: mintcream;*/
@@ -56,7 +56,7 @@ header > p {
   color: #FDFDFD;
   font-family: var(--paragraph);
   padding: 1em 1em .5em 1em;
-}  
+}
 footer {
   background-color: #FCFDFF;
 }
@@ -131,7 +131,7 @@ MAIN
 }
 @supports (initial-letter: 4) or
   (-webkit-initial-letter: 4) {
-  
+
   .intro-first::first-letter {
     font-weight: bold;
     text-decoration: none;
@@ -146,7 +146,7 @@ MAIN
   color: var(--black);
   font-variant: all-petite-caps;
   letter-spacing: 0.1em;
-  padding: .5em .5em 0 .5em;
+  padding: .5em .5em 0 .4em;
   margin: 0;
 }
 .enie {
@@ -163,7 +163,7 @@ MAIN
   padding: 1em 1em 0 .7em;
   font-size: 1.6rem;
 }
-.fact1 p.text.andes {   
+.fact1 p.text.andes {
   font-weight: bold;
   padding-top: 0;
 }
@@ -324,11 +324,11 @@ FOOTER
       grid-template-rows: repeat(8, minmax(100px, auto));
       grid-gap: .5em;
       /*padding-bottom: 3em;*/
-    } 
+    }
     .bandoneon {
       grid-column: 1/7;
       grid-row: 1/2;
-    } 
+    }
     .introduction {
       grid-column: 1/7;
       grid-row: 2/3;
@@ -381,7 +381,7 @@ FOOTER
       display: block;
       grid-column: 5/7;
       grid-row: 7/9;
-      padding: 1em; 
+      padding: 1em;
     }
     .aside {
       display: grid;
@@ -502,18 +502,18 @@ FOOTER
     grid-row: 3/5;
     font-size: 2.5rem;
     padding-left: 0;
-  } 
+  }
   .tutor {
     padding-left: 2em;
     letter-spacing: .3em;
     margin-left: -2em;
-  } 
+  }
   h1 {
-    font-size: 4rem;  
+    font-size: 4rem;
     grid-column: 2/6;
     grid-row: 1/2;
     padding-left: 0;
-    
+
   }
   h2 {
     grid-column: 2/7;
@@ -541,7 +541,7 @@ FOOTER
   }
   .bienvenido {
     font-size: 7rem;
-    padding: 0 0 0 .2em;
+    padding: 0;
   }
   .bandoneon {
     grid-column: 1/6;
@@ -592,7 +592,7 @@ FOOTER
     grid-column: 5/6;
     grid-row: 5/6;
     padding: 1em;
-    color: 
+    color:
     /*grid-column: 5/6;
     grid-row: 4/5;*/
   }
@@ -708,12 +708,12 @@ FOOTER
   }
   h1 {
     font-size: 5rem;
-  }  
+  }
   .main {
     grid-template-rows: repeat(5, minmax(300px, 350px));
     grid-gap: 1em;
     padding-top: 3em;
-  } 
+  }
   .bienvenido {
     font-size: 10rem;
   }
