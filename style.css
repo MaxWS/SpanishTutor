@@ -142,11 +142,11 @@ MAIN
   }
 }
 .bienvenido {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   color: var(--black);
   font-variant: all-petite-caps;
   letter-spacing: 0.1em;
-  padding: .5em .5em 0 .4em;
+  padding: .5em .5em 0 .35em;
   margin: 0;
 }
 .enie {
@@ -259,7 +259,7 @@ FOOTER
   grid-template-rows: 1em minmax(3em, auto) 1em;
   grid-gap: .5em;
   align-items: center;
-  color: #121212;
+  color: var(--black);
 }
 .maxi-photo {
   grid-column: 2/2;
@@ -290,8 +290,18 @@ FOOTER
   grid-column: 7/8;
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--lightgrey);;
+  border-left: 1px solid var(--lightgrey);
   padding: 1px 5px 1px 5px;
+}
+.fa-2x {
+  color: var(--lightgrey);
+  text-decoration: none;
+}
+.fab:hover {
+  color: var(--black);
+}
+.far:hover {
+  color: var(--black);
 }
 
 /* Medium devices (small tablets, portrait tablets) */
