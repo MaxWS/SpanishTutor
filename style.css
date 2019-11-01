@@ -120,7 +120,7 @@ MAIN
   font-size: 1.5rem;
 }
 .introduction {
-  padding-top: 3em;
+  padding-top: 2em;
 }
 .introduction-second {
   text-decoration: underline;
@@ -142,7 +142,7 @@ MAIN
   }
 }
 .bienvenido {
-  font-size: 3rem;
+  font-size: 2.9rem;
   color: var(--black);
   font-variant: all-petite-caps;
   letter-spacing: 0.1em;
