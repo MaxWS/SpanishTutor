@@ -398,7 +398,7 @@ FOOTER
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: repeat(8, minmax(150px, auto));
       grid-gap: .5em;
-      padding-bottom: 3em;
+      padding-bottom: 1em;
     }
     .aside-title {
       padding-left: 0.6em;
@@ -408,7 +408,7 @@ FOOTER
     }
     .intro-first {
       font-size: 1.7rem;
-      padding: 1em 1em .5em 1.6em;
+      padding: 0 .5em .5em 1.6em;
     }
     .writers {
       grid-column: 4/7;
@@ -476,7 +476,7 @@ FOOTER
       grid-column: 2/6;
       grid-row: 8/9;
       display: flex;
-      align-items: end;
+      /*align-items: end;*/
       font-size: 1.5rem;
       margin: 0 .5em 0 .5em;
       padding: 0;
@@ -536,8 +536,11 @@ FOOTER
     padding: 0 0 1em 0;
     font-size: 1.5rem;
   }
+  p.text.white {
+      padding: 1em 1em 0 1em;
+  }
   .intro-first {
-    padding: 0 0 1em 0;
+    padding: 0;
   }
   .website {
     grid-column: 1/13;
@@ -618,6 +621,7 @@ FOOTER
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, minmax(200px, auto));
     grid-gap: 1em;
+    padding-bottom: 3em;
   }
   .aside-title {
     font-size: 5rem;
@@ -630,6 +634,9 @@ FOOTER
     padding-left: 0;
     padding-top: 2em;
     padding-right: 0;
+  }
+  .writer-sub {
+    padding: 0;
   }
   .pizarnick {
     grid-column: 2/4;
@@ -723,6 +730,10 @@ FOOTER
     grid-template-rows: repeat(5, minmax(300px, 350px));
     grid-gap: 1em;
     padding-top: 3em;
+  }
+  .aside {
+    grid-template-rows: repeat(5, minmax(250px, auto));
+    padding-bottom: 5em;
   }
   .bienvenido {
     font-size: 10rem;
