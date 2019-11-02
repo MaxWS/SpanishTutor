@@ -128,6 +128,7 @@ MAIN
   color: #121212;
   font-family: var(--paragraph);
   line-height: 1.5em;
+  word-spacing: 1.5em;
 }
 @supports (initial-letter: 4) or
   (-webkit-initial-letter: 4) {
@@ -371,7 +372,7 @@ FOOTER
       padding: 0 .2em 0 1.5em;
     }
     ul {
-      padding: 0 1em 1em 3em;
+      padding: 0 1em 1em .5em;
     }
     .vines {
       grid-column: 1/7;
@@ -570,6 +571,7 @@ FOOTER
   .introduction-second {
     grid-column: 2/4;
     grid-row: 3/4;
+    word-spacing: 3em;
   }
   .enie {
     grid-column: 4/5;
@@ -615,6 +617,9 @@ FOOTER
     color:
     /*grid-column: 5/6;
     grid-row: 4/5;*/
+  }
+  ul {
+    padding-left: 2em;
   }
   /*.pills {
     grid-column: 5/6;
