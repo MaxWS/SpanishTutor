@@ -47,6 +47,10 @@ h1 {
   padding: 1em 1em 0 .4em;
   font-weight: lighter;
 }
+/*h3 {
+  font-size: 1.1rem;
+  display: inline;
+}*/
 header {
   background-color: var(--black);
   font-family: 'bodoni', sans-serif;
@@ -408,7 +412,8 @@ FOOTER
       padding-bottom: 1em;
     }
     .aside-title {
-      padding-left: 0.6em;
+      /*padding-left: 0.6em;*/
+      padding-top: .5em;
       font-size: 3.8rem;
       text-align: right;
       line-height: 0.9em;
@@ -612,6 +617,7 @@ FOOTER
     font-weight: bold;
     letter-spacing: .06em;
     padding-bottom: 0;
+    font-size: 1.3em;
   }
   .fact2 {
     grid-column: 5/6;
@@ -746,7 +752,13 @@ FOOTER
     grid-gap: 1em;
     padding-top: 3em;
   }
+  .fact1 p.text.andes {
+    font-size: 1.4em;
+  }
   p.text.vino {
+    font-size: 1.5rem;
+  }
+  ul {
     font-size: 1.5rem;
   }
   .aside {
