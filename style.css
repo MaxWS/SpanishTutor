@@ -73,6 +73,7 @@ ul {
   padding: 0 1em 1em 2em;
   color: var(--black);
   list-style: square;
+  font-family: var(--paragraph);
 }
 .content {
   display: grid;
@@ -163,14 +164,19 @@ MAIN
   justify-content: center;
   align-items: center;
 }
-.arab-title {
-  color: var(--lightgrey);
+.pronunciation {
+  color: var(--black);
   padding: 1em 1em 0 .7em;
   font-size: 1.6rem;
+  font-family: var(--paragraph); 
+  font-style: italic;
 }
 .fact1 p.text.andes {
   font-weight: bold;
   padding-top: 0;
+}
+.text.fantasy {
+  font-family: fantasy;
 }
 p.text.vino {
   padding-top: 0;
@@ -371,11 +377,11 @@ FOOTER
     .enie > p {
       font-size: 8rem;
     }
-    .arab {
+    .side-info {
       grid-column: 1/5;
       grid-row: 4/5;
     }
-    .arab-title {
+    .pronunciation {
       padding: 0 .2em 0 1.5em;
     }
     ul {
@@ -589,11 +595,11 @@ FOOTER
   .enie > p {
     font-size: 10rem;
   }
-  .arab {
+  .side-info {
     grid-column: 5/6;
     grid-row: 3/4;
   }
-  .arab-title {
+  .pronunciation {
     padding: 0;
   }
   .vines {
@@ -760,6 +766,9 @@ FOOTER
   }
   ul {
     font-size: 1.5rem;
+  }
+  .text.fantasy {
+    padding-top: 1em;
   }
   .aside {
     grid-template-rows: repeat(5, minmax(250px, auto));
