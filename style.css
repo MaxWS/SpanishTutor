@@ -160,7 +160,7 @@ MAIN
   padding-top: 0;
 }
 .text.fantasy {
-  font-family: fantasy;
+  text-transform: uppercase;
 }
 p.text.vino {
   padding-top: 0;
@@ -412,6 +412,7 @@ FOOTER
     grid-row: 2/4;
   }
   .notes-to-pizarnick {
+    display: flex;
     grid-row: 2/3;
     grid-column: 5/7;
     line-height: 1;
@@ -466,7 +467,7 @@ FOOTER
     font-size: 1.2rem;
     margin: 0 .5em 0 .5em;
     padding: 0;
-    letter-spacing: 0.03em;
+    letter-spacing: .03em;
   }
   .footer-container {
     grid-template-rows: .5em minmax(3em, auto) .5em;
@@ -628,7 +629,7 @@ FOOTER
     grid-column: 4/5;
     grid-row: 3/4;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     line-height: 1;
     padding: 0;
   }
@@ -699,6 +700,7 @@ FOOTER
     font-size: 1.5rem;
   }
 }
+/* End */
 
 /* XL devices */
 @media (min-width: 1800px) {
@@ -733,3 +735,4 @@ FOOTER
     font-size: 10rem;
   }
 }
+/* End */
